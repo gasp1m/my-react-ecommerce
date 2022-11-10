@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './itemDetail.css'
 import ItemCount from '../ItemCount/itemCount'
 import { Link } from 'react-router-dom';
-import { useCartContext } from '../CartContext/cartContext';
+import useCartContext from '../CartContext/cartContext';
 
 
 export const ItemDetail = ({data}) => {
@@ -13,7 +13,7 @@ export const ItemDetail = ({data}) => {
   
   const onAdd = (quantity) => {
     setGoToCart(true)
-    addProduct(data, quantity)
+    addProduct(data, quantity);
   }
 
   return (
