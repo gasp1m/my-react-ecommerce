@@ -10,7 +10,7 @@ const productos = [
   {
     id: 1,
     nombre: 'Cappuchino',
-    image: 'https://adaggio.nuestracarta.com.ar/wp-content/uploads/2022/04/IMG_0806-scaled-1-300x300.jpg',
+    image: 'https://vips.com.mx/menu/imgpreview/platos/capuchino.jpg',
     category: 'cafes'
   },
   {
@@ -34,7 +34,7 @@ const productos = [
   {
     id: 5,
     nombre: 'Té verde',
-    image: 'https://media.admagazine.com/photos/618a6151be961b98e9f0991c/master/w_1600%2Cc_limit/85139.jpg',
+    image: 'https://dietbox.es/wp-content/uploads/2017/04/T%C3%A9-verde2.jpg',
     category: 'tes'
   },
   {
@@ -97,7 +97,6 @@ export const ItemListContainer = ({texto}) => {
   return (
     <>
     <Title greeting={texto}/>
-    <ItemCount initial={1} stock={8} onAdd={onAdd}/>
     <ItemList data={data}/>
     </>
   )

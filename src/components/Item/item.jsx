@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
+import './item.css'
+import { CartContext } from '../../App';
 
-export const Item = ({info}) => {
+const Item = ({info}) => {
   return (
-    <a href="" className='cafe'>
+    <Link to={`/detalle/${info.id}`} className="prod">
         <img src={info.image} alt="" />
         <p>{info.nombre}</p>
-    </a>
+    </Link>
   )
 }
 
