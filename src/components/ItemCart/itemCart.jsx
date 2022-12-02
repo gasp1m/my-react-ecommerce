@@ -12,8 +12,8 @@ const {eliminarProducto} = useCartContext();
         <div>
             <p>Producto: {product.nombre}</p>
             <p>Cantidad: {product.quantity}</p>
-            <p>Precio u.: {product.price}</p>
-            <p>Subtotal: ${product.quantity * product.price}</p>
+            <p>Precio u.: ${product.precio}</p>
+            <p>Subtotal: ${product.quantity * product.precio}</p>
             <button onClick={() => eliminarProducto(product.id)}>Eliminar</button>
         </div>
     </div>

@@ -8,7 +8,7 @@ export const NavBar = () => {
     <div className="container">
         <nav className="nav">
             <div className="nav-brand">
-                <NavLink href="#" className="nav-link">Maraschio</NavLink>
+                <h2>Cafetería Maraschio</h2>
             </div>
             <ul className="nav-list">
                 <li>
