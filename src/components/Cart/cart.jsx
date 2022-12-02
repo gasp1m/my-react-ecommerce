@@ -8,6 +8,21 @@ const Cart = () => {
 
   const {cart, totalPrice} = useCartContext();
 
+  const order = {
+    buyer: {
+      name: 'Gaspar',
+      email: 'gasparmmaraschio@gmail.com',
+      phone: '123123',
+      address: 'Chacabuco'
+    },
+    items: cart.map(product => ({id: product.id, title: product.nombre, price: product.price, quantity: product.quantity})),
+    total: totalPrice(),
+  }
+
+  const handleClick = () => {
+
+  }
+
   if(cart.length === 0){
     return (
       <>
@@ -23,6 +38,7 @@ const Cart = () => {
           cart.map(product => <ItemCart key={product.id} product={product}/>)
         }
         <p className='totalDeCompra'>Total: ${totalPrice()}</p>
+        <button>Confirmar orden</button>
     </>
   )
 }
